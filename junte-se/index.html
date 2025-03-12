@@ -1,8 +1,5 @@
 <!DOCTYPE html><html lang="pt-br"><head>
 
-    <link rel="stylesheet" href="css/contato.css">
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vessel Engenharia | Contato</title>
@@ -12,41 +9,22 @@
 
     <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
+    <link rel="stylesheet" href="css/footer.css">
 
     <link rel="shortcut icon" href="images/vessel.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/footer.css">
-
 </head>
 
 <body>
     <nav>
-
         <div class="container">
-            <div class="langContainer">
-                <div class="selectFlag" style="display:none">
 
-                    <img id="BR" class="selected allFlags" alt="Brasil" src="images/BR.svg">
-
-                    <div id="BR" class="bandeira allFlags" style="display: none;">
-                        <img alt="Brasil" src="images/BR.svg">
-                    </div>
-
-
-                    <div id="GB" class="bandeira allFlags" style="display: none;">
-                        <img alt="United Kingdom" src="images/GB.svg">
-                    </div>
-
-                </div>
-            </div>
-            <img id="logo" src="images/logo.png" alt="VS Engineering Logo">
+            <img id="logo" src="images/logo.png">
 
             <div class="menu">
                 <a href="/">Home</a>
                 <a href="/sobre">A empresa</a>
+                <a href="/solucoes">Soluções</a>
                 <a href="/contato">Contato</a>
-                <a href="/junte-se">Junte-se a nós</a>
             </div>
 
             <div class="ham">
@@ -60,7 +38,7 @@
         <a href="/">Home</a>
         <a href="/sobre">A empresa</a>
         <a href="/solucoes">Soluções</a>
-        <a href="/junte-se">Junte-se a nós</a>
+        <a href="/jutaseAnos">Junte-se a nós</a>
     </div>
     <!-- FIM NAVBAR -->
 
@@ -69,23 +47,24 @@
 
             <div class="ContainerContatos">
                 <div class="ContainerText">
-                    <h2>Atuamos em todo territorio</h2>
+                    <h2>Atuamos em todo territorio
+                    </h2>
                     <h1 style="color: #ff6a00;">NACIONAL</h1>
-                    <h3>Levando as melhores soluções técnicas em elétrica</h3>
+                    <h3>levando as melhores soluções técnicas em elétrica</h3>
                 </div>
 
                 <div class="contacts">
                     <div class="telefone" style="display: flex; flex-direction: column;">
                         <h4><i class="fa-solid fa-phone"></i> Ligue</h4>
-                        <h4 style="color: black;">Telefone: (13) 3349-6462</h4>
+                        <h4 class="notH4">Telefone: (13) 3349-6462</h4>
                     </div>
                     <div class="email" style="display: flex; flex-direction: column;">
                         <h4><i class="fa-regular fa-envelope"></i> E-mail</h4>
-                        <h4 style="color: black;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d5e5253495c49527d4b584e4e585158535a5853555c4f545c135e5250">[email protected]</a></h4>
+                        <h4 class="notH4"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d7b4b8b9a3b6a3b897a1b2a4a4b2bbb2b9b0b2b9bfb6a5beb6f9b4b8ba">[email protected]</a></h4>
                     </div>
                     <div class="endereco" style="display: flex; flex-direction: column;">
                         <h4><i class="fa-solid fa-map-pin"></i> Endereço</h4>
-                        <h4 style="color: black;">Rua Dr. Soter de Araújo, 19 - Vila Nova - Santos/SP</h4>
+                        <h4 class="notH4">Rua Dr. Soter de Araújo, 19 - Vila Nova - Santos/SP</h4>
                     </div>
                 </div>
             </div>
@@ -93,31 +72,220 @@
             <!-- fica ao lado direito -->
             <div class="ContainerFormulario">
                 <div class="formulario">
-                    <h1>Contato</h1>
-                    <h5>Entre em contato para qualquer dúvida!</h5>
+                    <h1>Junte-se</h1>
+                    <h5>venha fazer parte da Vessel!</h5>
                     <form id="formulario">
                         <div class="nome">
                             <input type="text" placeholder="Nome" id="nome" required="">
                             <input type="text" placeholder="Sobrenome" id="sobrenome" required="">
                         </div>
-                        <input type="email" placeholder="Email" id="email" required="">
+                        <input type="text" placeholder="Ocupação" id="ocupacao" required="">
+                        <input type="tel" placeholder="Telefone" id="telefone" oninput="formatPhone(this)" required="">
+                        <input type="mail" placeholder="Email" id="email" required="">
+
+
                         <textarea name="" id="mensagem" cols="30" rows="7" placeholder="Digite aqui sua mensagem" required=""></textarea>
 
                         <button type="submit" id="enviar">Enviar</button>
                     </form>
                 </div>
-            </div>
-        </section>
 
+            </div>
+
+
+        </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.351600974105!2d-46.32298602487847!3d-23.948003978536033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce039e960ea32f%3A0x77a36775bd3e21d1!2sVESSEL%20ENGENHARIA!5e0!3m2!1spt-BR!2sbr!4v1711566739441!5m2!1spt-BR!2sbr" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
 
+        <style>
+            iframe {
+                margin: 50px 0;
+                width: 80%;
+            }
+
+            @media screen and (max-width: 1180px) {
+
+                main {
+                    padding: 0 !important;
+                }
+
+                .ContainerGeral {
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    margin-top: 0 !important;
+                    width: 100% !important;
+                    height: auto !important;
+                }
+
+                .ContainerContatos>.ContainerText {
+                    margin-bottom: 10%;
+                }
+
+                .ContainerContatos {
+                    margin-bottom: 20px;
+                }
+
+                .formulario {
+                    padding: 0 20px !important;
+                    margin-top: 30px;
+                    margin-bottom: 30px !important;
+                }
+
+            }
+
+            .ContainerContatos {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                max-width: 500px;
+                padding: 20px;
+                height: 100%;
+
+            }
+
+            .contacts {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: auto;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .contacts>.endereco {
+                margin-top: 4%;
+            }
+
+            .ContainerText {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                row-gap: 4px;
+                width: 100%;
+            }
+
+            .ContainerText>h1 {
+                font-size: 5rem;
+            }
+
+            .ContainerText>h2 {
+                font-size: 2rem
+            }
+
+            .ContainerText>h3 {
+                width: 80%;
+                font-size: 1.5rem;
+            }
+
+            h4:not(.notH4) {
+                color: #ff6a00;
+            }
+
+            .ContainerGeral {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 80%;
+                height: 83vh;
+                margin-top: 50px;
+
+                background-image: url();
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+        </style>
+
+        <style>
+            /*Deixei o MAIN como flex para evitar colocar mais uma div*/
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #f0f0f0;
+                padding: 20px;
+            }
 
 
 
+            .ContainerFormulario {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                /* margin-top: 1rem; */
+            }
+
+            .formulario {
+                max-width: 400px;
+                width: 100%;
+                background-color: #fff;
+                padding: 20px;
+            }
+
+            .formulario h1,
+            .formulario h5 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .formulario input,
+            .formulario textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            .nome {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .formulario .nome input {
+                width: 48%;
+            }
+
+            .formulario textarea {
+                resize: none;
+            }
+
+            .formulario input:focus,
+            .formulario textarea:focus {
+                border-color: #ff6a00;
+                outline: none;
+            }
+
+            .formulario button {
+                width: 100%;
+                color: white;
+                font-size: 1.2rem;
+                padding: 10px;
+                background-color: #ff6a00;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .formulario button:hover {
+                background-color: #ff7f33;
+            }
+        </style>
+        
     </main>
 
-    <footer class="footerGeral">
+    <footer class="footerGeral" style="margin-top: 0;">
         <div class="row-footer-1">
             <div class="find-us externo">
                 <i class="fas fa-map-marker-alt"></i>
@@ -137,7 +305,7 @@
                 <i class="far fa-envelope-open"></i>
                 <div class="interno">
                     <h4 class=".notH4">E-mail</h4>
-                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="46252928322732290630233535232a23282123282e27342f276825292b">[email protected]</a></p>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a0c3cfced4c1d4cfe0d6c5d3d3c5ccc5cec7c5cec8c1d2c9c18ec3cfcd">[email protected]</a></p>
                 </div>
             </div>
         </div>
@@ -147,7 +315,7 @@
                     <h3>SIGA-NOS</h3>
                     <i class="fa-brands fa-linkedin"></i>
                     <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube" onclick="window.location.href='https://www.youtube.com/@VesselEngenharia'"></i>
+                        <i class="fa-brands fa-youtube" onclick="window.location.href='https://www.youtube.com/@VesselEngenharia'"></i>
                 </div>
             </div>
             <div class="column-2-footer">
@@ -209,7 +377,6 @@
 
 
 
-
         document.getElementById("formulario").addEventListener("submit", function (event) {
             event.preventDefault();
 
@@ -217,11 +384,15 @@
             let nome = document.getElementById("nome").value;
             let sobrenome = document.getElementById("sobrenome").value;
             let email = document.getElementById("email").value;
+            let ocupacao = document.getElementById("ocupacao").value;
+            let telefone = document.getElementById("telefone").value;
             let mensagem = document.getElementById("mensagem").value;
-
+            
             mensagem = mensagem.replace(/\n/g, '\n');
 
-            fetch("/contato", {
+
+
+            fetch("/junte-se", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -230,7 +401,10 @@
 
                     nome: nome,
                     sobrenome: sobrenome,
+                    ocupacao: ocupacao,
+                    telefone: telefone,
                     email: email,
+
                     mensagem: mensagem
                 })
             })
@@ -239,7 +413,6 @@
                     console.log(response);
                     // alert(response.status)
 
-                    console.log(response.status)
 
                     if (response.status === 200) {
                         Swal.fire({
@@ -255,36 +428,9 @@
                         let sobrenome = document.getElementById("sobrenome").value = "";
                         let email = document.getElementById("email").value = "";
                         let mensagem = document.getElementById("mensagem").value = "";
+                        let ocupacao = document.getElementById("ocupacao").value = "";
+                        let telefone = document.getElementById("telefone").value = "";
                     }
-
-
-                    if (response.status === 500) {
-
-                        Swal.fire({
-                            title: "ERRO!",
-                            text: "Ocorreu um erro :(",
-                            icon: "error"
-                        });
-
-
-
-
-                    }
-
-                    if (response.status === 413) {
-
-                        Swal.fire({
-                            title: "MUITO GRANDE",
-                            text: "A sua mensagem tem muitos caracteres !",
-                            icon: "warning"
-                        });
-
-
-
-
-                    }
-
-
                 })
                 .catch(function (error) {
 
@@ -304,23 +450,29 @@
                             icon: "error"
                         });
                     }
-
-
                 });
+
+
         });
     </script>
 
 
+<script>
+    function formatPhone(input) {
+        // Remove caracteres não numéricos
+        let phoneNumber = input.value.replace(/\D/g, '');
 
-
-
-
-
-
-
-
-
-
-
+        // Aplica formatação
+        if (phoneNumber.length === 0) {
+            input.value = '';
+        } else if (phoneNumber.length <= 2) {
+            input.value = `(${phoneNumber}`;
+        } else if (phoneNumber.length <= 6) {
+            input.value = `(${phoneNumber.substring(0, 2)}) ${phoneNumber.substring(2)}`;
+        } else {
+            input.value = `(${phoneNumber.substring(0, 2)}) ${phoneNumber.substring(2, 7)}-${phoneNumber.substring(7, 11)}`;
+        }
+    }
+</script>
 
 </body></html>
