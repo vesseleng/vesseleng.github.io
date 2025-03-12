@@ -1,0 +1,157 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.c3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    /* flex-direction: row-reverse; */
+
+    width: 100%;
+    column-gap: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 3.7rem;
+    margin-bottom: 4.7%;
+}
+
+
+
+.c3>#left {
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-items: flex-start;
+    gap: 15px;
+    width: 50%;
+
+}
+
+
+
+
+.c3>#left>div>h1 {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+.c3>#left>div>h1>span {
+    color: #ff6a00;
+}
+
+.c3>#left>div>p {
+    font-size: 1.13rem;
+    width: 95%;
+    /* text-align: center; */
+    line-height: 25px;
+    /* margin-bottom: 1.2rem; */
+}
+
+.c3>#left>div>button {
+    width: 180px;
+    font-size: 1.25rem;
+    background-color: #ff6a00;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    transition: all 0.4s;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.c3>#left>div>button:hover {
+    background-color: #9c4101;
+}
+
+
+.c3>#left>div {
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+}
+
+.c3>#left>img {
+    width: 100%;
+    height: 30%;
+}
+
+.c3>#right {
+    width: 50%;
+}
+
+@media screen and (max-width: 1180px) {
+
+    .c3>#left>img {
+        display: none;
+    }
+
+    .c3 {
+        align-items: center;
+
+    }
+
+}
+
+@media screen and (max-width: 775px) {
+    .c3 {
+        padding: 0 38px;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .c3>#left {
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        row-gap: 10%;
+    }
+
+    .c3>#left>img {
+        display: none;
+        width: 100%;
+    }
+
+    .c3>#left>div>h1 {
+        text-align: center;
+        font-size: 2.7rem;
+        padding: 0;
+    }
+
+    .c3>#left>div>p {
+        font-size: 1.5rem;
+        line-height: 43px;
+
+    }
+
+    .c3>#left>div>p,
+    #left>h1 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .c3>#right {
+        width: 100%;
+    }
+
+    .c3>#left>div>button {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+
+
+}

@@ -1,0 +1,181 @@
+.novidades-linkedin>h1 {
+    width: 100%;
+    color: #ff6a00;
+    text-align: center;
+    font-size: 4rem;
+
+    margin-bottom: 4rem;
+}
+
+.novidades-linkedin {
+
+    display: flex;
+
+    justify-content: space-between;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+
+/*AQUI SERÁ FEITO AS ALTERAÇÕES DE CADA DIV-LINKEDIN*/
+.container_post_linkedin {
+    
+    background-color: white;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: 30%;
+    padding: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.098);
+    border-radius: 10px;
+    cursor: pointer;
+    gap: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container_post_linkedin:hover {
+    transform: scale(1.05);
+}
+
+.row-linkedin-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row-linkedin-1>p {
+    font-size: 0.75rem;
+    height: 55px;
+    width: 100%;
+}
+
+.vermais_linkedin {
+    color: #7b7b7b;
+}
+
+.vermais_linkedin:hover {
+    color: rgb(59, 59, 255) !important;
+    text-decoration-line: underline;
+}
+
+.empresa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.empresa>img {
+    height: 20px;
+    width: 56px;
+    margin-right: 4px;
+}
+
+.empresa>h4 {
+    font-size: 0.8rem;
+}
+
+.seguir_linkedin {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    font-size: 0.90rem;
+    height: 100%;
+    flex: 1;
+}
+
+.seguir_linkedin>.fa-solid.fa-plus {
+    color: #0077b5;
+}
+
+.seguir_linkedin>p {
+    margin-right: 15px;
+    color: #0077b5;
+}
+
+.row-linkedin-3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.row-linkedin-3>.fa-brands.fa-linkedin {
+    color: #0077b5;
+    font-size: 1.6rem;
+}
+
+.row-linkedin-2>img {
+    width: 100%;
+    height: auto;
+}
+
+#verMaisLinkedin{
+    display: none;
+}
+
+@media (max-width: 1180px) {
+    .novidades-linkedin {
+        flex-direction: initial;
+
+    }
+
+    .container_post_linkedin {
+        width: 49%;
+        margin-top: 2%;
+
+    }
+}
+
+@media (max-width: 750px) {
+    .container_post_linkedin:nth-child(-n+2){
+        display: flex ;
+    }
+
+    #verMaisLinkedin {
+        margin-top: 2.5rem;
+        border: none;
+        display: block;
+        padding: 15px 20px;
+        cursor: pointer;
+        background-color: #ff6a00;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+    #verMaisLinkedin:focus {
+        background-color:#fe832a;
+    }
+
+    .container_post_linkedin{
+        display: none;
+    }
+
+    .novidades-linkedin {
+        flex-direction: column;
+
+    }
+
+    .novidades-linkedin>h1{
+        font-size: 2.75rem;
+    }
+
+    .container_post_linkedin {
+        width: auto;
+        margin-top: 4%;
+
+    }
+}
+
+
+

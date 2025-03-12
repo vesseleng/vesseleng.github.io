@@ -1,0 +1,301 @@
+.slides {
+    margin: 0;
+    width: 100%;
+
+    padding-bottom: 20px;
+    user-select: none;
+}
+
+
+.slide-layer>h1 {
+    font-size: 3.75rem;
+}
+
+
+.slides>.swiper {
+
+    height: auto;
+    position: relative;
+    /* Adicionado para posicionar corretamente o botão */
+}
+
+.slides>.swiper-slide {
+    position: relative;
+    /* Adicionado para posicionar corretamente o layer */
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+/* .swiper-slide {
+    background-image: linear-gradient(to bottom,#0F4CE3, #1050E6, #1259E7);
+} */
+
+.slide-layer {
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 3s, opacity 3s;
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-layer {
+
+    font-size: 3rem;
+
+}
+
+.slide-layer button {
+
+    margin-top: 3%;
+
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #ff6a00;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.slide-layer button:hover {
+
+
+    background-color: #ff8832;
+
+
+}
+
+
+* {
+    font-family: arial;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(255, 106, 0) !important;
+
+
+}
+
+.swiper-pagination-bullet {
+    background-color: #ffa05c !important;
+
+}
+
+@media screen and (max-width: 1180px) {
+    /* .slides>.swiper {
+        height: 45vh;
+    } */
+    .slide-layer>h1 {
+        text-align: center;
+    }
+
+    .slide-layer button {
+
+        margin-top: 3vh;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+
+    .swiper-button-next::after {
+        font-size: 2.2rem;
+    }
+
+    .swiper-button-prev::after {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    /* .slides>.swiper {
+        height: 30vh;
+    } */
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+    .slide-layer {
+        font-size: 1.4rem;
+    }
+
+    .slide-layer> button {
+
+        margin-top: 4vh;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .slide-layer>h1 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .swiper-button-next::after {
+        font-size: 1.5rem;
+    }
+
+    .swiper-button-prev::after {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    /* .slides>.swiper {
+        height: 25vh;
+    } */
+
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    /* .sl3, .sl4 {
+        justify-content: center !important;
+    } */
+
+    .slide-layer {
+        /* justify-content: start; */
+        font-size: 1.4rem;
+    }
+
+    .slide-layer>button {
+        margin-top: 1vh;
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    .slide-layer>h1 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .swiper-button-next::after {
+        font-size: 1.5rem;
+    }
+
+    .swiper-button-prev::after {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+/* //////////////////////////// */
+
+
+
+
+.swiperEmpresas {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    height: 10rem;
+    background: white;
+    padding: 2rem;
+
+    border: solid 2px rgb(227, 227, 227);
+}
+
+@media screen and (max-width: 1180px) {
+    
+    .slide-layer>h1 {
+        text-align: center;
+    }
+
+    .swiper-button-next::after{
+        font-size: 2.2rem !important;
+    }   
+    
+    .swiper-button-prev::after{
+        font-size: 2.2rem !important;
+    }
+}
+
+@media screen and (max-width: 775px) {
+
+
+
+
+    
+
+
+    .swiperEmpresas {
+        width: 100%;
+    }
+
+    .slide-layer {
+
+        font-size: 1.4rem;
+
+    }
+
+    .slide-layer>h1 {
+        /* font-size: 2.25rem; */
+        text-align: center;
+
+        
+    }
+
+    .swiper-button-next::after{
+        font-size: 1.5rem !important;
+    }   
+    
+    .swiper-button-prev::after{
+        font-size: 1.5rem !important;
+    }
+}
+
+.swiperEmpresas .swiper-slide {
+
+    font-size: 18px;
+    user-select: none;
+}
+
+.swiperEmpresas .swiper-slide img {
+    pointer-events: none;
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiperEmpresas .swiper-slide {
+    width: auto;
+    /* width: auto; */
+    height: auto;
+}

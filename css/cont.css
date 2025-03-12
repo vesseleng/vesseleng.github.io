@@ -1,0 +1,75 @@
+.contador {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    align-items: center;
+
+    margin: 3rem 0;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    color: #ffffff;
+}
+
+.contador>h1 {
+    color: #ffffff;
+    font-size: 2.4rem;
+    padding-top: 3rem;
+    width: 100%;
+    padding-bottom: 4rem;
+    background-color: #ff6a00;
+    text-align: center;
+}
+
+.contador>.dados {
+    display: flex;
+    padding-bottom: 4rem;
+    width: 100%;
+    background-color: #ff6a00;
+    /* justify-content: space-between; */
+
+}
+
+
+.contador>.dados>div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contador>.dados>div>h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 775px) {
+
+    .contador {
+        background-color: #ff6a00;
+    }
+
+    .contador>h1 {
+        color: #ffffff;
+        font-size: 2.4rem;
+        padding-bottom: 3rem;
+    
+        text-align: center;
+    }
+
+    .contador>.dados {
+/* 
+        flex-direction: column; */
+        flex-wrap: wrap;
+
+    }
+
+    .contador>.dados>div {
+
+        padding-bottom: 22px;
+
+    }
+}

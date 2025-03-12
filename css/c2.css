@@ -1,0 +1,102 @@
+.c2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    column-gap: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+    margin-bottom: 3.7rem;
+
+
+
+}
+
+.c2>.rightC2 {
+
+    font-size: 1.3rem;
+    width: 95%;
+    /* text-align: justify; */
+    line-height: 30px;
+    margin-bottom: 1.2rem;
+}
+
+.c2>.rightC2>button {
+
+    width: auto;
+    font-size: 1.25rem;
+    background-color: #ff6a00;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    transition: all 0.4s;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.c2>.rightC2>h2 {
+    color: #ff6a00;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin-bottom: 1.2rem;
+}
+
+.c2>.rightC2>button:hover {
+    background-color: #9c4101;
+}
+
+@media screen and (max-width: 1180px) {
+
+    .c2>img {
+        width: 45%;
+
+    }
+}
+
+@media screen and (max-width: 775px) {
+
+    .c2 {
+        flex-direction: column-reverse;
+        padding: 5%;
+
+        margin-bottom: 3rem;
+    }
+
+    .rightC2 {
+        width: 100%;
+        row-gap: 10%;
+    }
+
+    .rightC2>h1 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .rightC2>p {
+        font-size: 1.3rem;
+        line-height: 43px;
+
+    }
+
+    .rightC2>p,
+    .rightC2>h1 {
+        width: 100%;
+        margin-bottom: 1.2rem;
+    }
+
+    .rightC2>button {
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .c2>img {
+        width: 100%;
+
+    }
+}
